@@ -14,9 +14,8 @@ Per l'esecuzione dei test Case:
 NOTA BENE:
 La percentuale di coverage è inferiore al 100% (ovviamente la classe main non è testata).
 Nella classe Abbonamento è stato utilizzato un tipo enumerativo, definito come TipoAbbonamento,
-dopo un pò di studio ho capito che il tipo Enum, estendendo java.lang.Enum, andava testato essendo questi che abbassava
-ed era la presenza det tipo enumerativo che abbassava la percentuale di coverage della classe abbonamento.
-Dopo un pò di ricerche ho creato un test apposito per il tipo enumerativo con copertura del 100% ma nonostante questo il solo tipo enumerativo risulta fermo ad una copertura dell 65% (percentuale invariata anche dopo la creazione del test ad hoc).
+dopo un pò di studio ho capito che il tipo Enum, estendendo java.lang.Enum, andava testato essendo questi che abbassava la percentuale di coverage della classe abbonamento.
+Ho creato un test apposito per il tipo enumerativo con copertura del 100% ma nonostante questo il solo tipo enumerativo risulta fermo ad una copertura dell 65% (percentuale invariata sia prima che dopo la creazione del test ad hoc).
 Nonostante il tentativo di cercare ulteriori informazioni in merito al testing di semplici tipi enum, la classe abbonamento risulta 
 attualmente ancora non totalmente coperta.
 Interessante notare che il tipo enum è incredibilmente semplice, consta di sole 3 costanti e non ha alcun altro componente e
