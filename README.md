@@ -6,8 +6,8 @@ Per l'esecuzione del progetto:
 4 - Mandare in esecuzione la classe eseguibile Main;
 
 Per l'esecuzione dei test Case:
-1 - importare la cartella test_funzionali contenuta nella mastery;
-2 - importare la cartella test_strutturali contenuta nella mastery;
+1 - importare la cartella test_funzionali contenuta nella master dir;
+2 - importare la cartella test_strutturali contenuta nella master dir;
 3 - eseguire La TestSuite contenuta in test_funzionali per eseguire tutti i test funzionali;
 4 - eseguire La TestSuite contenuta in test_strutturali per eseguire tutti i test strutturali;
 
