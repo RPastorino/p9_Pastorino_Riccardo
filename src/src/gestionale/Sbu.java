@@ -149,13 +149,13 @@ public class Sbu {
      * @return libri
      */
     public List<Articolo> ricercaLibro( String txt ){
-    	List<Articolo> listArticoli = new ArrayList<Articolo>();
+    	List<Articolo> libri = new ArrayList<Articolo>();
     	for(Biblioteca b:biblioteche) {
     		for(Articolo a:b.ricercaLibro(txt)){
-    			listArticoli.add(a);
+    			libri.add(a);
     		} 				
     	}
-    	return listArticoli;
+    	return libri;
     }
     
     /**
