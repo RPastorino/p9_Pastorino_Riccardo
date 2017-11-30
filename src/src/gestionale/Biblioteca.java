@@ -50,21 +50,19 @@ public class Biblioteca {
      * contenuta in uno dei campi
      *
      * @param txt stringa da ricercare
-     * @return articoliTrovati
+     * @return articoli
      */
     public List<Articolo> ricercaCatalogoUnificato( String txt ){
-    	List<Articolo> listaArticoli = new ArrayList<Articolo>();
-		for (Articolo a: catalogo) {
+	List<Articolo> catalogoUnificato = new ArrayList<Articolo>();
+    	catalogoUnificato.addAll(catalogo);
+    	catalogoUnificato.addAll(catalogoDigitale);
+    	List<Articolo> articoli = new ArrayList<Articolo>();
+		for (Articolo a: catalogoUnificato) {
 			if (a.checkCampiArticolo(txt)){
-				listaArticoli.add(a);
+				articoli.add(a);
 			}
 		}
-		for (Articolo a: catalogoDigitale) {
-			if (a.checkCampiArticolo(txt)){
-				listaArticoli.add(a);
-			}
-		}
-		return listaArticoli;
+		return articoli;
     }
     
     /**
@@ -72,16 +70,16 @@ public class Biblioteca {
      * tutti gli utenti anche quelli non abbonati
      *
      * @param txt stringa da ricercare
-     * @return listArticoli
+     * @return libri
      */
     public List<Articolo> ricercaLibro( String txt ){
-    	List<Articolo> listArticoli = new ArrayList<Articolo>();
+    	List<Articolo> libri = new ArrayList<Articolo>();
     	for (Articolo a: catalogo) {
 			if (a.checkCampiArticolo(txt)){
-				listArticoli.add(a);
+				libri.add(a);
 			}
 		}
-    	return listArticoli;
+    	return libri;
     }
     
     /**
