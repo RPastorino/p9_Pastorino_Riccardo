@@ -171,8 +171,8 @@ public class Sbu {
 				utentiTrovati.add(u);
 			}
 		}
-		for(Utente u: utentiRegistrati) {
-			if(u.checkAnagrafica(txt)) {
+		for(Utente b: bibliotecari) {
+			if(b.checkAnagrafica(txt)) {
 				utentiTrovati.add(u);
 			}
 		}
